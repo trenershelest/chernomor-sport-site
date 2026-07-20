@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chernomor-sport.ru/sitemap.xml
