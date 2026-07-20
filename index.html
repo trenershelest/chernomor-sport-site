@@ -278,7 +278,8 @@
   .contact-list li{padding:16px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;font-size:14px;}
   .contact-list li span:first-child{color:var(--grey);font-family:var(--f-sub);text-transform:uppercase;font-size:12px;letter-spacing:1px;}
   .contact-list li span:last-child{color:var(--white);font-weight:600;}
-  .map-placeholder{background:var(--black-3);border:1px solid var(--line);aspect-ratio:16/11;display:flex;align-items:center;justify-content:center;color:var(--grey);font-size:13px;text-align:center;padding:20px;font-family:var(--f-sub);}
+  .map-placeholder{background:var(--black-3);border:1px solid var(--line);aspect-ratio:16/11;overflow:hidden;}
+  .map-placeholder iframe{width:100%;height:100%;border:0;filter:grayscale(0.3) contrast(1.1);}
 
   footer{padding:28px 0;text-align:center;color:var(--grey);font-size:13px;font-family:var(--f-sub);}
   footer a{color:var(--red-bright);}
@@ -627,7 +628,7 @@
       </div>
     </div>
     <div class="map-placeholder">
-      КАРТА · вставить встраиваемую карту 2ГИС или Яндекс.Карт<br>43.567167, 39.805392
+      <iframe src="https://yandex.ru/map-widget/v1/?ll=39.805392%2C43.567167&z=16&pt=39.805392,43.567167,pm2rdm" title="Черномор-Спорт на карте" loading="lazy" allowfullscreen></iframe>
     </div>
   </div>
 </section>
