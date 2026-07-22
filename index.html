@@ -10,14 +10,14 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Фитнес-клуб Черномор-Спорт">
 <meta property="og:title" content="Черномор-Спорт — фитнес-клуб в Сочи">
-<meta property="og:description" content="Тренажёрный зал, кроссфит, боевые искусства, пилатес, массаж, солярий. Лечебный переулок, 1, Сочи.">
+<meta property="og:description" content="Тренажёрный зал, кроссфит, боевые искусства, пилатес, массаж, солярий. Лечебный переулок, 2, корпус 5, Сочи.">
 <meta property="og:url" content="https://chernomorsport.ru/">
 <meta property="og:image" content="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=1200&q=80">
 <meta property="og:locale" content="ru_RU">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Черномор-Спорт — фитнес-клуб в Сочи">
-<meta name="twitter:description" content="Тренажёрный зал, кроссфит, боевые искусства, пилатес, массаж, солярий. Лечебный переулок, 1, Сочи.">
+<meta name="twitter:description" content="Тренажёрный зал, кроссфит, боевые искусства, пилатес, массаж, солярий. Лечебный переулок, 2, корпус 5, Сочи.">
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=1200&q=80">
 
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -33,7 +33,7 @@
   "priceRange": "от 450 RUB",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Лечебный переулок, 1",
+    "streetAddress": "Лечебный переулок, 2, корпус 5",
     "addressLocality": "Сочи",
     "addressRegion": "Краснодарский край",
     "postalCode": "354024",
@@ -117,15 +117,17 @@
 
 <style>
   :root{
-    --black:#0A0A0A;
-    --black-2:#141414;
-    --black-3:#1C1C1C;
-    --line:#2B2B2B;
+    --black:#070C0E;
+    --black-2:#0E1618;
+    --black-3:#142023;
+    --line:#22323480;
+    --line:#223034;
     --white:#F5F5F3;
-    --grey:#9A9A9A;
-    --red:#E10600;
-    --red-bright:#FF2A1F;
-    --red-dark:#8C0400;
+    --grey:#93A3A2;
+    --sea:#14B8A6;
+    --sea-bright:#2DEFD1;
+    --sea-dark:#0B6E63;
+    --glow:#B6FF3D;
     --f-display:'Russo One', sans-serif;
     --f-sub:'Oswald', sans-serif;
     --f-body:'Inter', sans-serif;
@@ -140,26 +142,40 @@
   h1,h2,h3{font-family:var(--f-display);text-transform:uppercase;letter-spacing:0.5px;font-weight:400;transform:skewX(-3deg);}
   .logo,.hero h1,.section-head h2,.action-break h2,.athlete-text h2{
     -webkit-text-stroke:1px rgba(0,0,0,0.35);
-    text-shadow:3px 3px 0 var(--black),5px 5px 0 rgba(0,0,0,0.5),0 0 26px rgba(225,6,0,0.25);
+    text-shadow:3px 3px 0 var(--black),5px 5px 0 rgba(0,0,0,0.5),0 0 26px rgba(20,184,166,0.28);
   }
   .hero h1 .accent,.section-head h2 .accent,.action-break h2 .accent,.athlete-text h2 .accent{
     -webkit-text-stroke:1px rgba(0,0,0,0.5);
   }
-  .eyebrow{font-family:var(--f-sub);color:var(--red-bright);text-transform:uppercase;font-size:13px;font-weight:700;letter-spacing:3px;margin-bottom:12px;}
+  .eyebrow{font-family:var(--f-sub);color:var(--sea-bright);text-transform:uppercase;font-size:13px;font-weight:700;letter-spacing:3px;margin-bottom:12px;}
 
   /* Header */
-  header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,0.94);backdrop-filter:blur(6px);border-bottom:2px solid var(--red);}
-  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--maxw);margin:0 auto;}
+  header{position:sticky;top:0;z-index:50;background:rgba(7,12,14,0.94);backdrop-filter:blur(6px);border-bottom:2px solid var(--sea);}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--maxw);margin:0 auto;gap:12px;}
   .logo{font-family:var(--f-display);font-size:24px;color:var(--white);letter-spacing:1px;transform:skewX(-3deg);display:inline-block;}
-  .logo span{color:var(--red-bright);}
-  .navlinks{display:flex;gap:30px;font-family:var(--f-sub);font-size:14px;font-weight:500;color:var(--grey);text-transform:uppercase;letter-spacing:1px;}
-  .navlinks a:hover{color:var(--red-bright);}
-  .cta-btn{background:var(--red);color:var(--white);padding:11px 22px;font-family:var(--f-sub);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:1px;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);}
-  .cta-btn:hover{background:var(--red-bright);}
-  @media(max-width:820px){.navlinks{display:none;}}
+  .logo span{color:var(--sea-bright);}
+  .navlinks{display:flex;gap:22px;font-family:var(--f-sub);font-size:13.5px;font-weight:500;color:var(--grey);text-transform:uppercase;letter-spacing:0.5px;}
+  .navlinks a:hover{color:var(--sea-bright);}
+  .cta-btn{background:var(--sea);color:var(--black);padding:11px 22px;font-family:var(--f-sub);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:1px;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);}
+  .cta-btn:hover{background:var(--sea-bright);}
+  @media(max-width:900px){.navlinks{display:none;}}
+
+  /* Mobile menu */
+  .menu-toggle{display:none;background:none;border:1px solid var(--line);color:var(--white);width:42px;height:42px;font-size:18px;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;}
+  @media(max-width:900px){.menu-toggle{display:flex;}}
+  .mobile-menu{position:fixed;inset:0;background:var(--black);z-index:200;display:flex;flex-direction:column;transform:translateY(-100%);transition:transform 0.32s ease;padding:20px 24px;}
+  .mobile-menu.open{transform:translateY(0);}
+  .mobile-menu-top{display:flex;justify-content:space-between;align-items:center;}
+  .mobile-menu-close{background:none;border:1px solid var(--line);color:var(--white);width:42px;height:42px;font-size:18px;}
+  .mobile-menu-links{flex:1;display:flex;flex-direction:column;justify-content:center;gap:2px;overflow-y:auto;}
+  .mobile-menu-links a{font-family:var(--f-display);font-size:26px;color:var(--white);padding:14px 0;border-bottom:1px solid var(--line);text-transform:uppercase;transform:skewX(-3deg);}
+  .mobile-menu-links a:active{color:var(--sea-bright);}
+  .mobile-menu-cta{margin:20px 0 8px;}
+  .mobile-menu-contact{color:var(--grey);font-size:13px;font-family:var(--f-sub);}
+  .mobile-menu-contact a{color:var(--sea-bright);}
 
   /* Hero */
-  .hero{position:relative;min-height:640px;display:flex;align-items:flex-end;border-bottom:2px solid var(--red);overflow:hidden;}
+  .hero{position:relative;min-height:640px;display:flex;align-items:flex-end;border-bottom:2px solid var(--sea);overflow:hidden;}
   .hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=1600&q=80') center 20%/cover;}
 
   /* Athlete banner */
@@ -170,36 +186,36 @@
   .athlete-photos img{width:100%;height:100%;min-height:380px;object-fit:cover;}
   .athlete-text{padding:60px 48px;display:flex;flex-direction:column;justify-content:center;}
   .athlete-text h2{font-size:clamp(26px,6vw,38px);color:var(--white);margin-bottom:16px;}
-  .athlete-text h2 .accent{color:var(--red-bright);}
+  .athlete-text h2 .accent{color:var(--sea-bright);}
   .athlete-text p{color:#C9C9C7;font-size:15px;margin-bottom:20px;max-width:440px;}
 
   /* Action break banner */
-  .action-break{position:relative;min-height:340px;display:flex;align-items:center;background:url('https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?w=1600&q=80') center/cover;border-bottom:2px solid var(--red);}
-  .action-break::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,0.92) 30%,rgba(10,10,10,0.45) 100%);}
+  .action-break{position:relative;min-height:340px;display:flex;align-items:center;background:url('https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?w=1600&q=80') center/cover;border-bottom:2px solid var(--sea);}
+  .action-break::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,12,14,0.92) 30%,rgba(7,12,14,0.45) 100%);}
   .action-break-content{position:relative;z-index:2;}
   .action-break h2{font-size:clamp(28px,7vw,48px);color:var(--white);max-width:560px;}
-  .action-break h2 .accent{color:var(--red-bright);}
+  .action-break h2 .accent{color:var(--sea-bright);}
   .action-break p{color:#D8D8D6;margin-top:14px;max-width:440px;font-size:15px;}
-  .hero-fade{position:absolute;inset:0;background:linear-gradient(0deg,var(--black) 5%,rgba(10,10,10,0.75) 45%,rgba(10,10,10,0.35) 100%);}
-  .hero-stripe{position:absolute;top:0;right:0;bottom:0;width:38%;background:linear-gradient(100deg,transparent 0%,rgba(225,6,0,0.18) 100%);}
+  .hero-fade{position:absolute;inset:0;background:linear-gradient(0deg,var(--black) 5%,rgba(7,12,14,0.75) 45%,rgba(7,12,14,0.35) 100%);}
+  .hero-stripe{position:absolute;top:0;right:0;bottom:0;width:38%;background:linear-gradient(100deg,transparent 0%,rgba(20,184,166,0.2) 100%);}
   .hero-content{position:relative;z-index:2;padding:60px 0 56px;width:100%;}
   .hero h1{font-size:clamp(34px,9vw,76px);line-height:0.98;margin-bottom:6px;color:var(--white);text-shadow:0 4px 24px rgba(0,0,0,0.5);word-break:break-word;}
-  .hero h1 .accent{color:var(--red-bright);}
+  .hero h1 .accent{color:var(--sea-bright);}
   .hero p.lead{color:#D8D8D6;font-size:17px;max-width:480px;margin:18px 0 26px;}
   .badge-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px;}
-  .badge{background:rgba(20,20,20,0.85);border:1px solid var(--line);padding:8px 16px;font-size:13px;color:var(--grey);display:flex;align-items:center;gap:6px;font-family:var(--f-sub);}
+  .badge{background:rgba(14,22,24,0.85);border:1px solid var(--line);padding:8px 16px;font-size:13px;color:var(--grey);display:flex;align-items:center;gap:6px;font-family:var(--f-sub);}
   .badge b{color:var(--white);}
   .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
-  .btn-primary{background:var(--red);color:var(--white);padding:16px 30px;font-family:var(--f-sub);font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:1px;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);}
-  .btn-primary:hover{background:var(--red-bright);}
+  .btn-primary{background:var(--sea);color:var(--black);padding:16px 30px;font-family:var(--f-sub);font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:1px;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);}
+  .btn-primary:hover{background:var(--sea-bright);}
   .btn-secondary{background:transparent;border:1px solid var(--white);color:var(--white);padding:16px 30px;font-family:var(--f-sub);font-weight:600;font-size:15px;text-transform:uppercase;letter-spacing:1px;}
-  .btn-secondary:hover{border-color:var(--red-bright);color:var(--red-bright);}
+  .btn-secondary:hover{border-color:var(--sea-bright);color:var(--sea-bright);}
 
   /* Section generic */
   section{padding:72px 0;border-bottom:1px solid var(--line);}
   .section-head{max-width:620px;margin-bottom:44px;}
   .section-head h2{font-size:clamp(28px,6vw,44px);color:var(--white);}
-  .section-head h2 .accent{color:var(--red-bright);}
+  .section-head h2 .accent{color:var(--sea-bright);}
   .section-head p{color:var(--grey);margin-top:10px;font-size:15px;}
 
   /* About */
@@ -208,7 +224,7 @@
   @media(max-width:780px){.about-grid{grid-template-columns:1fr;}}
   .about p{color:#C9C9C7;font-size:15px;margin-bottom:14px;}
   .amenity-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-  .amenity{background:var(--black-3);border-left:3px solid var(--red);padding:14px 16px;font-size:13px;color:var(--grey);font-family:var(--f-sub);text-transform:uppercase;letter-spacing:0.5px;}
+  .amenity{background:var(--black-3);border-left:3px solid var(--sea);padding:14px 16px;font-size:13px;color:var(--grey);font-family:var(--f-sub);text-transform:uppercase;letter-spacing:0.5px;}
 
   /* Gallery strip */
   .gallery-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;}
@@ -221,16 +237,25 @@
   @media(max-width:820px){.trainer-grid{grid-template-columns:1fr 1fr;}}
   @media(max-width:560px){.trainer-grid{grid-template-columns:1fr;}}
   .trainer-card{background:var(--black-2);border:1px solid var(--line);overflow:hidden;}
-  .trainer-photo{aspect-ratio:3/4;background:var(--black-3);display:flex;align-items:center;justify-content:center;color:var(--grey);font-size:12px;text-align:center;padding:16px;font-family:var(--f-sub);border-bottom:2px solid var(--red);}
+  .trainer-photo{aspect-ratio:3/4;background:var(--black-3);display:flex;align-items:center;justify-content:center;color:var(--grey);font-size:12px;text-align:center;padding:16px;font-family:var(--f-sub);border-bottom:2px solid var(--sea);}
   .trainer-photo img{width:100%;height:100%;object-fit:cover;}
   .trainer-info{padding:18px 20px;}
   .trainer-info h3{font-family:var(--f-sub);text-transform:uppercase;font-weight:700;font-size:16px;color:var(--white);margin-bottom:4px;letter-spacing:0.5px;}
-  .trainer-info .role{color:var(--red-bright);font-family:var(--f-sub);font-size:12px;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;}
+  .trainer-info .role{color:var(--sea-bright);font-family:var(--f-sub);font-size:12px;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;}
   .trainer-info p{color:var(--grey);font-size:13px;margin-bottom:10px;}
   .trainer-info .tags{display:flex;flex-wrap:wrap;gap:6px;}
   .trainer-info .tag{background:var(--black-3);border:1px solid var(--line);font-size:11px;color:var(--grey);padding:4px 8px;font-family:var(--f-sub);text-transform:uppercase;letter-spacing:0.5px;}
   .trainer-card.add-card{display:flex;align-items:center;justify-content:center;min-height:100%;border-style:dashed;}
   .trainer-card.add-card .inner{padding:30px 20px;text-align:center;color:var(--grey);font-size:13px;font-family:var(--f-sub);}
+  .trainer-collapse{position:relative;}
+  .trainer-expand{display:none;width:100%;margin-top:18px;background:var(--black-2);border:1px solid var(--sea);color:var(--sea-bright);padding:15px;font-family:var(--f-sub);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:1px;cursor:pointer;}
+  @media(max-width:820px){
+    .trainer-collapse{max-height:660px;overflow:hidden;}
+    .trainer-collapse::after{content:'';position:absolute;left:0;right:0;bottom:0;height:110px;background:linear-gradient(180deg,transparent,var(--black) 92%);pointer-events:none;}
+    .trainer-collapse.expanded{max-height:none;}
+    .trainer-collapse.expanded::after{display:none;}
+    .trainer-expand{display:block;}
+  }
 
   /* Services */
   .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);}
@@ -238,7 +263,7 @@
   @media(max-width:560px){.services-grid{grid-template-columns:1fr;}}
   .service-card{background:var(--black-2);padding:26px;transition:background 0.15s;}
   .service-card:hover{background:var(--black-3);}
-  .service-card .num{font-family:var(--f-display);color:var(--red-dark);font-size:13px;margin-bottom:10px;}
+  .service-card .num{font-family:var(--f-display);color:var(--sea-dark);font-size:13px;margin-bottom:10px;}
   .service-card h3{font-family:var(--f-sub);text-transform:uppercase;font-weight:700;font-size:16px;color:var(--white);margin-bottom:8px;letter-spacing:0.5px;}
   .service-card p{color:var(--grey);font-size:13px;}
 
@@ -246,19 +271,55 @@
   .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
   @media(max-width:820px){.price-grid{grid-template-columns:1fr;}}
   .price-card{background:var(--black-2);border:1px solid var(--line);padding:30px;position:relative;}
-  .price-card.featured{border-color:var(--red);background:linear-gradient(180deg,rgba(225,6,0,0.08),transparent 60%);}
-  .price-card.featured::before{content:'ПОПУЛЯРНЫЙ';position:absolute;top:-1px;right:-1px;background:var(--red);color:var(--white);font-family:var(--f-sub);font-size:11px;font-weight:700;letter-spacing:1px;padding:6px 12px;}
+  .price-card.featured{border-color:var(--sea);background:linear-gradient(180deg,rgba(20,184,166,0.1),transparent 60%);}
+  .price-card.featured::before{content:'ПОПУЛЯРНЫЙ';position:absolute;top:-1px;right:-1px;background:var(--sea);color:var(--black);font-family:var(--f-sub);font-size:11px;font-weight:700;letter-spacing:1px;padding:6px 12px;}
   .price-card h3{font-family:var(--f-sub);font-weight:600;font-size:14px;color:var(--grey);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px;}
   .price-card .amount{font-family:var(--f-display);font-size:clamp(30px,7vw,42px);color:var(--white);margin-bottom:8px;}
   .price-card .amount .unit{font-family:var(--f-body);font-size:14px;color:var(--grey);font-weight:600;text-transform:none;}
   .price-card p.note{font-size:12px;color:var(--grey);}
   .price-disclaimer{margin-top:24px;background:var(--black-3);border:1px dashed var(--line);padding:16px 20px;font-size:13px;color:var(--grey);}
 
+  /* Price accordion tabs */
+  .price-accordion{background:var(--black-2);border:1px solid var(--line);border-left:3px solid var(--sea);margin-bottom:12px;}
+  .price-accordion summary{cursor:pointer;padding:18px 22px;font-family:var(--f-sub);font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:0.5px;color:var(--white);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+  .price-accordion summary::-webkit-details-marker{display:none;}
+  .price-accordion summary::after{content:'+';color:var(--sea-bright);font-size:20px;flex-shrink:0;}
+  .price-accordion[open] summary::after{content:'−';}
+  .price-accordion-body{padding:0 22px 22px;}
+  .ptable{width:100%;border-collapse:collapse;margin-bottom:18px;}
+  .ptable:last-child{margin-bottom:0;}
+  .ptable caption{text-align:left;font-family:var(--f-sub);font-size:12.5px;color:var(--sea-bright);text-transform:uppercase;letter-spacing:0.5px;font-weight:600;margin-bottom:8px;}
+  .ptable tr{border-bottom:1px solid var(--line);}
+  .ptable tr:last-child{border-bottom:0;}
+  .ptable td{padding:9px 4px;font-size:13px;color:var(--grey);vertical-align:top;}
+  .ptable td:first-child{color:#D8D8D6;}
+  .ptable td:last-child{text-align:right;color:var(--white);font-weight:700;white-space:nowrap;}
+  .ptable td .sub{display:block;font-size:11px;color:#6b7877;}
+
+  /* Schedule */
+  .schedule-grid{border:1px solid var(--line);overflow:hidden;}
+  .schedule-row{display:grid;grid-template-columns:2fr 1fr 1fr;padding:14px 18px;border-bottom:1px solid var(--line);font-size:13px;color:var(--grey);align-items:center;}
+  .schedule-row:last-child{border-bottom:0;}
+  .schedule-row span:first-child{color:var(--white);font-family:var(--f-sub);text-transform:uppercase;letter-spacing:0.5px;font-weight:600;font-size:13px;}
+  .schedule-head{background:var(--black-3);}
+  .schedule-head span{color:var(--sea-bright)!important;font-family:var(--f-sub);font-weight:700;text-transform:uppercase;font-size:11px;letter-spacing:1px;}
+  @media(max-width:560px){.schedule-row{grid-template-columns:1.4fr 1fr 1fr;font-size:11px;padding:12px;}}
+
+  /* Zones */
+  .zones-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  @media(max-width:820px){.zones-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.zones-grid{grid-template-columns:1fr;}}
+  .zone-card{background:var(--black-2);border:1px solid var(--line);overflow:hidden;}
+  .zone-card img{width:100%;height:170px;object-fit:cover;filter:grayscale(10%) contrast(1.05);}
+  .zone-info{padding:16px 18px;border-top:2px solid var(--sea);}
+  .zone-info h3{font-family:var(--f-sub);text-transform:uppercase;font-weight:700;font-size:14px;color:var(--white);margin-bottom:4px;letter-spacing:0.5px;}
+  .zone-info p{color:var(--grey);font-size:12.5px;}
+
   /* Reviews */
   .review-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
   @media(max-width:780px){.review-grid{grid-template-columns:1fr;}}
-  .review-card{background:var(--black-2);border-top:2px solid var(--red);padding:22px;}
-  .review-card .stars{color:var(--red-bright);font-size:13px;margin-bottom:10px;letter-spacing:2px;}
+  .review-card{background:var(--black-2);border-top:2px solid var(--sea);padding:22px;}
+  .review-card .stars{color:var(--sea-bright);font-size:13px;margin-bottom:10px;letter-spacing:2px;}
   .review-card p{color:#C9C9C7;font-size:14px;margin-bottom:12px;}
   .review-card .who{font-family:var(--f-sub);font-size:13px;font-weight:600;color:var(--white);text-transform:uppercase;letter-spacing:0.5px;}
 
@@ -266,7 +327,7 @@
   .faq-item{border-bottom:1px solid var(--line);padding:18px 0;}
   .faq-item summary{cursor:pointer;font-family:var(--f-sub);font-weight:600;font-size:15px;color:var(--white);list-style:none;display:flex;justify-content:space-between;align-items:center;}
   .faq-item summary::-webkit-details-marker{display:none;}
-  .faq-item summary::after{content:'+';color:var(--red-bright);font-size:20px;}
+  .faq-item summary::after{content:'+';color:var(--sea-bright);font-size:20px;}
   .faq-item[open] summary::after{content:'−';}
   .faq-item p{color:var(--grey);font-size:14px;margin-top:12px;max-width:680px;}
 
@@ -282,7 +343,7 @@
   .map-placeholder iframe{width:100%;height:100%;border:0;filter:grayscale(0.3) contrast(1.1);}
 
   footer{padding:28px 0;text-align:center;color:var(--grey);font-size:13px;font-family:var(--f-sub);}
-  footer a{color:var(--red-bright);}
+  footer a{color:var(--sea-bright);}
 
   /* Mobile fixes */
   @media(max-width:480px){
@@ -309,20 +370,43 @@
   <div class="nav">
     <div class="logo" style="display:flex;align-items:center;gap:10px;">
       <img src="logo.png" alt="Черномор-Спорт" style="width:38px;height:38px;transform:none;">
-      <span style="transform:skewX(-3deg);display:inline-block;">ЧЕРНОМОР<span style="color:var(--red-bright);">-СПОРТ</span></span>
+      <span style="transform:skewX(-3deg);display:inline-block;">ЧЕРНОМОР<span style="color:var(--sea-bright);">-СПОРТ</span></span>
     </div>
     <nav class="navlinks">
       <a href="#about">О клубе</a>
-      <a href="#trainers">Тренеры</a>
       <a href="#services">Услуги</a>
       <a href="#prices">Цены</a>
+      <a href="#schedule">Расписание</a>
+      <a href="#zones">Зоны</a>
+      <a href="#trainers">Тренеры</a>
       <a href="#reviews">Отзывы</a>
-      <a href="#faq">Вопросы</a>
       <a href="#contacts">Контакты</a>
     </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">☰</button>
     <a class="cta-btn" href="https://wa.me/message/DMJJODIRIWBDL1" target="_blank" rel="noopener">Записаться</a>
   </div>
 </header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-top">
+    <div class="logo" style="display:flex;align-items:center;gap:10px;">
+      <img src="logo.png" alt="Черномор-Спорт" style="width:32px;height:32px;transform:none;">
+    </div>
+    <button class="mobile-menu-close" id="menuClose" aria-label="Закрыть меню">✕</button>
+  </div>
+  <nav class="mobile-menu-links">
+    <a href="#about">О клубе</a>
+    <a href="#services">Услуги</a>
+    <a href="#prices">Цены</a>
+    <a href="#schedule">Расписание занятий</a>
+    <a href="#zones">Зоны клуба</a>
+    <a href="#trainers">Наши тренеры</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <a class="btn-primary mobile-menu-cta" href="https://wa.me/message/DMJJODIRIWBDL1" target="_blank" rel="noopener" style="text-align:center;">Записаться на тренировку</a>
+  <div class="mobile-menu-contact">Лечебный переулок, 2, корпус 5, Сочи · <a href="tel:+79189906090">+7 918 990-60-90</a></div>
+</div>
 
 <section class="hero">
   <div class="hero-bg"></div>
@@ -387,12 +471,204 @@
   </div>
 </section>
 
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Наши <span class="accent">услуги</span></h2>
+      <p>Всё для тренировок, восстановления и отдыха — под одной крышей.</p>
+    </div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card"><div class="num">01</div><h3>Тренажёрный зал</h3><p>Кардио и силовая зона, свободные веса</p></div>
+    <div class="service-card"><div class="num">02</div><h3>Кроссфит</h3><p>Функциональные групповые тренировки</p></div>
+    <div class="service-card"><div class="num">03</div><h3>Боевые искусства</h3><p>Секции единоборств — уточнить расписание</p></div>
+    <div class="service-card"><div class="num">04</div><h3>Пилатес и стретчинг</h3><p>Групповые занятия, растяжка</p></div>
+    <div class="service-card"><div class="num">05</div><h3>Настольный теннис</h3><p>Отдельная зона для игры</p></div>
+    <div class="service-card"><div class="num">06</div><h3>Персональный тренер</h3><p>Индивидуальные тренировки по запросу</p></div>
+    <div class="service-card"><div class="num">07</div><h3>Массаж</h3><p>Оздоровительный, антицеллюлитный, релаксирующий, лимфодренаж, спортивный</p></div>
+    <div class="service-card"><div class="num">08</div><h3>Солярий</h3><p>Вертикальный солярий</p></div>
+    <div class="service-card"><div class="num">09</div><h3>Фитнес-бар</h3><p>Напитки и перекусы после тренировки</p></div>
+  </div>
+</section>
+
+<section id="prices">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Абоне<span class="accent">менты и цены</span></h2>
+      <p>Полный прайс клуба — по разделам. Тыкни вкладку, чтобы раскрыть.</p>
+    </div>
+
+    <details class="price-accordion" open>
+      <summary>Клубные карты · тренажёрный зал</summary>
+      <div class="price-accordion-body">
+        <table class="ptable">
+          <caption>Карта «Тренажёрный зал» (7:00–23:00)</caption>
+          <tr><td>12 мес.<span class="sub">заморозка на 60 дней</span></td><td>20 990 ₽<span class="sub">1 749 ₽/мес</span></td></tr>
+          <tr><td>6 мес.<span class="sub">заморозка на 30 дней</span></td><td>12 600 ₽<span class="sub">2 100 ₽/мес</span></td></tr>
+          <tr><td>3 мес.<span class="sub">заморозка на 14 дней</span></td><td>7 500 ₽<span class="sub">2 500 ₽/мес</span></td></tr>
+          <tr><td>1 мес.<span class="sub">заморозки нет</span></td><td>3 200 ₽</td></tr>
+          <tr><td>15 дней<span class="sub">заморозки нет</span></td><td>2 250 ₽</td></tr>
+        </table>
+        <table class="ptable">
+          <caption>Другие карты</caption>
+          <tr><td>«Семейная» на двоих, 3 мес.<span class="sub">заморозка на 14 дней</span></td><td>13 800 ₽</td></tr>
+          <tr><td>«Школьная» (7–18 лет), 1 мес.<span class="sub">заморозки нет</span></td><td>2 300 ₽</td></tr>
+          <tr><td>«Школьная» (7–18 лет), 3 мес.<span class="sub">заморозка на 14 дней</span></td><td>5 990 ₽<span class="sub">1 996 ₽/мес</span></td></tr>
+        </table>
+        <table class="ptable">
+          <caption>Без абонемента</caption>
+          <tr><td>Разовое посещение</td><td>450 ₽</td></tr>
+          <tr><td>6 посещений, 1 мес.<span class="sub">заморозки нет</span></td><td>2 400 ₽<span class="sub">400 ₽/посещение</span></td></tr>
+          <tr><td>20 посещений, 3 мес.<span class="sub">заморозка на 7 дней</span></td><td>6 990 ₽<span class="sub">349 ₽/посещение</span></td></tr>
+        </table>
+      </div>
+    </details>
+
+    <details class="price-accordion">
+      <summary>Персональные тренировки</summary>
+      <div class="price-accordion-body">
+        <table class="ptable">
+          <caption>Тренажёрный зал</caption>
+          <tr><td>1 тренировка</td><td>1 800 ₽</td></tr>
+          <tr><td>5 тренировок</td><td>7 990 ₽</td></tr>
+          <tr><td>10 тренировок<span class="sub">заморозка на 14 дней</span></td><td>14 990 ₽</td></tr>
+          <tr><td>1 тренировка с тренером Денисом Зубовым</td><td>2 500 ₽</td></tr>
+        </table>
+        <table class="ptable">
+          <caption>ММА (тренер Александр Ворсин)</caption>
+          <tr><td>1 тренировка</td><td>2 000 ₽</td></tr>
+          <tr><td>5 тренировок</td><td>9 500 ₽</td></tr>
+          <tr><td>10 тренировок</td><td>18 000 ₽</td></tr>
+          <tr><td>Детская перс. тренировка ММА, 1 занятие</td><td>1 800 ₽</td></tr>
+        </table>
+        <table class="ptable">
+          <caption>Бокс</caption>
+          <tr><td>1 тренировка с тренером Максимом Лобасом</td><td>3 000 ₽</td></tr>
+        </table>
+      </div>
+    </details>
+
+    <details class="price-accordion">
+      <summary>Групповые тренировки</summary>
+      <div class="price-accordion-body">
+        <table class="ptable">
+          <caption>Здоровая спина / растяжка (тренер Кристина Никитина)</caption>
+          <tr><td>1 занятие</td><td>700 ₽</td></tr>
+          <tr><td>8 занятий</td><td>3 500 ₽</td></tr>
+          <tr><td>12 занятий<span class="sub">+ 1 мес. ТЗ в подарок, заморозка на 7 дней</span></td><td>4 800 ₽</td></tr>
+        </table>
+        <table class="ptable">
+          <caption>Силовая функциональная (тренер Ирина Василенко)</caption>
+          <tr><td>1 занятие</td><td>700 ₽</td></tr>
+          <tr><td>Абонемент 1 мес.<span class="sub">+ ТЗ в подарок</span></td><td>5 000 ₽</td></tr>
+        </table>
+        <table class="ptable">
+          <caption>CrossFit (тренер Денис Зубов)</caption>
+          <tr><td>1 занятие</td><td>900 ₽</td></tr>
+        </table>
+        <table class="ptable">
+          <caption>Утренний фитнес для женщин (тренер Кристина Ефанова)</caption>
+          <tr><td>1 занятие</td><td>800 ₽</td></tr>
+        </table>
+        <table class="ptable">
+          <caption>Смешанные единоборства ММА — дети и подростки (тренер Александр Ворсин)</caption>
+          <tr><td>1 занятие</td><td>700 ₽</td></tr>
+          <tr><td>4 занятия</td><td>2 500 ₽</td></tr>
+          <tr><td>8 занятий</td><td>4 500 ₽</td></tr>
+          <tr><td>12 занятий<span class="sub">заморозка на 7 дней</span></td><td>6 000 ₽</td></tr>
+        </table>
+        <div class="price-disclaimer" style="margin-top:0;">Срок действия абонемента на групповые занятия — 1 месяц.</div>
+      </div>
+    </details>
+
+    <details class="price-accordion">
+      <summary>Массаж</summary>
+      <div class="price-accordion-body">
+        <table class="ptable">
+          <tr><td>Массаж спины и шейно-воротниковой зоны (30–40 мин)</td><td>1 700 ₽</td></tr>
+          <tr><td>Массаж общий классический оздоровительный (60 мин)</td><td>2 500 ₽</td></tr>
+        </table>
+      </div>
+    </details>
+
+    <details class="price-accordion">
+      <summary>Солярий</summary>
+      <div class="price-accordion-body">
+        <table class="ptable">
+          <tr><td>1 минута<span class="sub">работает каждый день после 15:00</span></td><td>40 ₽</td></tr>
+        </table>
+        <div class="price-disclaimer" style="margin-top:0;">Дополнительно предоставляем крем, шапочку, стикини.</div>
+      </div>
+    </details>
+
+    <div class="price-disclaimer">✅ Цены подтверждены официальным прайс-листом клуба (Instagram-сторис, @sochi_fitness). Если что-то поменялось — пришли новый скрин, обновим.</div>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Расписание <span class="accent">занятий</span></h2>
+      <p>Тренажёрный зал — свободное посещение по общим часам клуба. Групповые направления — по расписанию тренера.</p>
+    </div>
+    <div class="schedule-grid">
+      <div class="schedule-row schedule-head"><span>Направление</span><span>Пн–Сб</span><span>Вс</span></div>
+      <div class="schedule-row"><span>Тренажёрный зал</span><span>07:00–23:00</span><span>08:00–22:00</span></div>
+      <div class="schedule-row"><span>ММА, дети 7–9 лет</span><span>Пн Ср Пт 15:00</span><span>—</span></div>
+      <div class="schedule-row"><span>ММА, дети 10–12 лет</span><span>Пн Ср Пт 16:15</span><span>—</span></div>
+      <div class="schedule-row"><span>Солярий</span><span>ежедневно после 15:00</span><span>после 15:00</span></div>
+      <div class="schedule-row"><span>Здоровая спина / растяжка</span><span>по расписанию тренера</span><span>—</span></div>
+      <div class="schedule-row"><span>Силовая функциональная</span><span>по расписанию тренера</span><span>—</span></div>
+      <div class="schedule-row"><span>CrossFit</span><span>по расписанию тренера</span><span>—</span></div>
+      <div class="schedule-row"><span>Утренний фитнес для женщин</span><span>по расписанию тренера</span><span>—</span></div>
+      <div class="schedule-row"><span>Бокс (перс.)</span><span>по расписанию тренера</span><span>—</span></div>
+    </div>
+    <div class="price-disclaimer">🕗 Часы зала, расписание детской группы ММА и солярия — подтверждены по официальным сторис клуба. Точное время остальных групповых направлений уточняется у администрации — впишем, как только пришлют.</div>
+  </div>
+</section>
+
+<section id="zones">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Зоны <span class="accent">клуба</span></h2>
+      <p>Несколько функциональных пространств под одной крышей. Фото ниже — ориентировочные, заменим на настоящие снимки зала, как только пришлют.</p>
+    </div>
+    <div class="zones-grid">
+      <div class="zone-card">
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80" alt="Тренажёрный зал">
+        <div class="zone-info"><h3>Тренажёрный зал</h3><p>Кардио и силовая зона, свободные веса</p></div>
+      </div>
+      <div class="zone-card">
+        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80" alt="Зал единоборств">
+        <div class="zone-info"><h3>Зал единоборств</h3><p>Бокс, ММА</p></div>
+      </div>
+      <div class="zone-card">
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80" alt="Зона пилатеса и стретчинга">
+        <div class="zone-info"><h3>Пилатес и стретчинг</h3><p>Групповые занятия, растяжка</p></div>
+      </div>
+      <div class="zone-card">
+        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=600&q=80" alt="Женский зал">
+        <div class="zone-info"><h3>Женский зал</h3><p>Отдельное пространство для женских групп</p></div>
+      </div>
+      <div class="zone-card">
+        <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80" alt="Настольный теннис">
+        <div class="zone-info"><h3>Настольный теннис</h3><p>Отдельная зона для игры</p></div>
+      </div>
+      <div class="zone-card">
+        <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=600&q=80" alt="Зона отдыха и бар">
+        <div class="zone-info"><h3>Зона отдыха и бар</h3><p>Место для отдыха и перекуса после тренировки</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="trainers">
   <div class="wrap">
     <div class="section-head">
       <h2>Тренерский <span class="accent">состав</span></h2>
       <p>Мастера спорта и чемпионы России и мира — каждый тренер клуба имеет профильное образование и подтверждённые спортивные достижения.</p>
     </div>
+    <div class="trainer-collapse" id="trainerCollapse">
     <div class="trainer-grid">
 
       <div class="trainer-card">
@@ -486,26 +762,8 @@
       </div>
 
     </div>
-  </div>
-</section>
-
-<section id="services">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Наши <span class="accent">услуги</span></h2>
-      <p>Всё для тренировок, восстановления и отдыха — под одной крышей.</p>
     </div>
-  </div>
-  <div class="services-grid">
-    <div class="service-card"><div class="num">01</div><h3>Тренажёрный зал</h3><p>Кардио и силовая зона, свободные веса</p></div>
-    <div class="service-card"><div class="num">02</div><h3>Кроссфит</h3><p>Функциональные групповые тренировки</p></div>
-    <div class="service-card"><div class="num">03</div><h3>Боевые искусства</h3><p>Секции единоборств — уточнить расписание</p></div>
-    <div class="service-card"><div class="num">04</div><h3>Пилатес и стретчинг</h3><p>Групповые занятия, растяжка</p></div>
-    <div class="service-card"><div class="num">05</div><h3>Настольный теннис</h3><p>Отдельная зона для игры</p></div>
-    <div class="service-card"><div class="num">06</div><h3>Персональный тренер</h3><p>Индивидуальные тренировки по запросу</p></div>
-    <div class="service-card"><div class="num">07</div><h3>Массаж</h3><p>Оздоровительный, антицеллюлитный, релаксирующий, лимфодренаж, спортивный</p></div>
-    <div class="service-card"><div class="num">08</div><h3>Солярий</h3><p>Вертикальный солярий</p></div>
-    <div class="service-card"><div class="num">09</div><h3>Фитнес-бар</h3><p>Напитки и перекусы после тренировки</p></div>
+    <button class="trainer-expand" id="trainerExpand">Смотреть всех тренеров ↓</button>
   </div>
 </section>
 
@@ -518,33 +776,6 @@
     </div>
   </div>
 </div>
-
-<section id="prices">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Абоне<span class="accent">менты</span></h2>
-      <p>Актуальные цены уточняются у администрации клуба перед публикацией сайта.</p>
-    </div>
-    <div class="price-grid">
-      <div class="price-card">
-        <h3>Разовое посещение</h3>
-        <div class="amount">450 <span class="unit">₽</span></div>
-        <p class="note">Без абонемента, в любой день</p>
-      </div>
-      <div class="price-card featured">
-        <h3>Месячный абонемент</h3>
-        <div class="amount">от 2 300 <span class="unit">₽ / мес</span></div>
-        <p class="note">Персональные и групповые тренировки, солярий</p>
-      </div>
-      <div class="price-card">
-        <h3>Годовой абонемент</h3>
-        <div class="amount">от 32 400 <span class="unit">₽ / год</span></div>
-        <p class="note">Точную сумму уточнить у администрации</p>
-      </div>
-    </div>
-    <div class="price-disclaimer">✅ Разовое посещение и месячный абонемент — подтверждённые цены из официального Instagram клуба (@sochi_fitness). Годовой абонемент — по справочнику 2ГИС, требует уточнения у администрации.</div>
-  </div>
-</section>
 
 <section id="reviews">
   <div class="wrap">
@@ -633,7 +864,7 @@
         <p>Свяжитесь удобным способом</p>
       </div>
       <ul class="contact-list">
-        <li><span>Адрес</span><span>Лечебный переулок, 1, Сочи</span></li>
+        <li><span>Адрес</span><span>Лечебный переулок, 2, корпус 5, Сочи</span></li>
         <li><span>Телефон / WhatsApp</span><span><a href="tel:+79189906090">+7 918 990-60-90</a></span></li>
         <li><span>Часы работы</span><span>Пн–Сб 07:00–23:00, Вс 08:00–22:00</span></li>
         <li><span>Оплата</span><span>Наличные, банк, карта, QR</span></li>
@@ -653,9 +884,31 @@
 
 <footer>
   <div class="wrap">
-    © 2026 ЧЕРНОМОР-СПОРТ · Лечебный переулок, 1, Сочи · <a href="tel:+79189906090">+7 918 990-60-90</a>
+    © 2026 ЧЕРНОМОР-СПОРТ · Лечебный переулок, 2, корпус 5, Сочи · <a href="tel:+79189906090">+7 918 990-60-90</a>
   </div>
 </footer>
+
+<script>
+  (function(){
+    var toggle=document.getElementById('menuToggle');
+    var menu=document.getElementById('mobileMenu');
+    var close=document.getElementById('menuClose');
+    function openMenu(){menu.classList.add('open');document.body.style.overflow='hidden';}
+    function closeMenu(){menu.classList.remove('open');document.body.style.overflow='';}
+    if(toggle) toggle.addEventListener('click',openMenu);
+    if(close) close.addEventListener('click',closeMenu);
+    if(menu) menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu);});
+
+    var trainerBox=document.getElementById('trainerCollapse');
+    var trainerBtn=document.getElementById('trainerExpand');
+    if(trainerBtn && trainerBox){
+      trainerBtn.addEventListener('click',function(){
+        trainerBox.classList.add('expanded');
+        trainerBtn.style.display='none';
+      });
+    }
+  })();
+</script>
 
 </body>
 </html>
