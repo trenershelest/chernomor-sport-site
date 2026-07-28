@@ -639,7 +639,7 @@
       <h2>Расписание <span class="accent">занятий</span></h2>
       <p>Тренажёрный зал — свободное посещение по общим часам клуба. Групповые направления — по расписанию тренера.</p>
     </div>
-    <div class="schedule-grid">
+    <div class="schedule-grid" id="schedule-grid">
       <div class="schedule-row schedule-head"><span>Направление</span><span>Пн–Сб</span><span>Вс</span></div>
       <div class="schedule-row"><span>Тренажёрный зал</span><span>07:00–23:00</span><span>08:00–22:00</span></div>
       <div class="schedule-row"><span>ММА, дети 7–9 лет</span><span>Пн Ср Пт 15:00</span><span>—</span></div>
@@ -651,6 +651,19 @@
       <div class="schedule-row"><span>Утренний фитнес для женщин</span><span>по расписанию тренера</span><span>—</span></div>
       <div class="schedule-row"><span>Бокс (перс.)</span><span>по расписанию тренера</span><span>—</span></div>
     </div>
+    <script>
+      fetch('https://chernomor-schedule-admin.onrender.com/schedule.json')
+        .then(function(r){ return r.json(); })
+        .then(function(items){
+          var grid = document.getElementById('schedule-grid');
+          var html = '<div class="schedule-row schedule-head"><span>Направление</span><span>Пн–Сб</span><span>Вс</span></div>';
+          items.forEach(function(item){
+            html += '<div class="schedule-row"><span>' + item.name + '</span><span>' + item.col1 + '</span><span>' + item.col2 + '</span></div>';
+          });
+          grid.innerHTML = html;
+        })
+        .catch(function(){ /* оставляем текущее расписание, если сервис не ответил */ });
+    </script>
     <div class="price-disclaimer">🕗 Часы зала, расписание детской группы ММА и солярия — подтверждены по официальным сторис клуба. Точное время остальных групповых направлений уточняется у администрации — впишем, как только пришлют.</div>
   </div>
 </section>
