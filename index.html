@@ -178,11 +178,11 @@
   .navlinks a:hover{color:var(--sea-bright);}
   .cta-btn{background:var(--sea);color:var(--black);padding:11px 22px;font-family:var(--f-sub);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:1px;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);}
   .cta-btn:hover{background:var(--sea-bright);}
-  @media(max-width:900px){.navlinks{display:none;}}
+  @media(max-width:1150px){.navlinks{display:none;}}
 
   /* Mobile menu */
   .menu-toggle{display:none;background:none;border:1px solid var(--line);color:var(--white);width:42px;height:42px;font-size:18px;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;}
-  @media(max-width:900px){
+  @media(max-width:1150px){
     .menu-toggle{display:flex;}
     header .cta-btn{display:none;}
     .nav{gap:10px;}
@@ -191,7 +191,7 @@
   .mobile-menu.open{transform:translateY(0);}
   .mobile-menu-top{display:flex;justify-content:space-between;align-items:center;}
   .mobile-menu-close{background:none;border:1px solid var(--line);color:var(--white);width:42px;height:42px;font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;}
-  .mobile-menu-links{flex:1;display:flex;flex-direction:column;justify-content:center;gap:2px;overflow-y:auto;}
+  .mobile-menu-links{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:flex-start;gap:2px;overflow-y:auto;padding-top:6px;-webkit-overflow-scrolling:touch;}
   .mobile-menu-links a{font-family:var(--f-display);font-size:26px;color:var(--white);padding:14px 0;border-bottom:1px solid var(--line);text-transform:uppercase;transform:skewX(-3deg);}
   .mobile-menu-links a:active{color:var(--sea-bright);}
   .mobile-menu-cta{margin:20px 0 8px;}
@@ -254,7 +254,7 @@
   .floating-cta a{flex:1;text-align:center;padding:15px 10px;font-family:var(--f-sub);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:0.8px;}
   .floating-cta a.fc-call{background:var(--black-2);color:var(--white);border-top:1px solid var(--line);border-right:1px solid var(--line);}
   .floating-cta a.fc-book{background:var(--pink);color:var(--black);border-top:1px solid var(--pink);}
-  @media(max-width:900px){.floating-cta{display:flex;}}
+  @media(max-width:1150px){.floating-cta{display:flex;}}
 
   /* Section generic */
   section{padding:72px 0;border-bottom:1px solid var(--line);}
@@ -578,7 +578,7 @@
         <table class="ptable">
           <caption>Другие карты</caption>
           <tr><td>«Семейная» на двоих, 3 мес.<span class="sub">заморозка на 14 дней</span></td><td>13 800 ₽</td></tr>
-          <tr><td>«Школьная» (7–18 лет), 1 мес.<span class="sub">заморозка нет</span></td><td>2 300 ₽</td></tr>
+          <tr><td>«Школьная» (7–18 лет), 1 мес.<span class="sub">заморозки нет</span></td><td>2 300 ₽</td></tr>
           <tr><td>«Школьная» (7–18 лет), 3 мес.<span class="sub">заморозка на 14 дней</span></td><td>5 990 ₽<span class="sub">1 996 ₽/мес</span></td></tr>
         </table>
         <table class="ptable">
@@ -764,7 +764,7 @@
           <h3>Лобас Максим Николаевич</h3>
           <div class="role">Персональный тренер по боксу</div>
           <p>Высшее образование — НГУ физической культуры, спорта и здоровья им. П.Ф. Лесгафта. МС по боксу, неоднократный победитель международных и всероссийских соревнований, чемпион Санкт-Петербурга.</p>
-          <div class="tags"><div class="tag">МС по бокус</div><div class="tag">10+ лет опыта</div></div>
+          <div class="tags"><div class="tag">МС по боксу</div><div class="tag">10+ лет опыта</div></div>
         </div>
       </div>
 
@@ -783,8 +783,8 @@
         <div class="trainer-info">
           <h3>Никитина Кристина Эдуардовна</h3>
           <div class="role">Персональный тренер · Pole Dance</div>
-          <p>Высшее педагогическое образование, курсы «Инструктор тренажёрного зала». КМС по художественной гимнастике. Силовые тренировки, Full Body, растяжка, заровая спина, МФР, Pole Dance; консультант по диетологии и нутрициологии.</p>
-          <div class="tags"><div class="tag">15+ лет опыта</div><div class="tag">КМСг гимнастика</div></div>
+          <p>Высшее педагогическое образование, курсы «Инструктор тренажёрного зала». КМС по художественной гимнастике. Силовые тренировки, Full Body, растяжка, здоровая спина, МФР, Pole Dance; консультант по диетологии и нутрициологии.</p>
+          <div class="tags"><div class="tag">15+ лет опыта</div><div class="tag">КМС гимнастика</div></div>
         </div>
       </div>
 
@@ -848,12 +848,12 @@
   <div class="wrap">
     <div class="section-head reveal">
       <h2>Отзывы <span class="accent">спортсменов</span></h2>
-      <p>5,0 из 5 на �ндекс-KАртах — 229 оценок, 91 отзыв. Плюс 4,2 из 5 на 2ГИС (25 оценок).</p>
+      <p>5,0 из 5 на Яндекс.Картах — 229 оценок, 91 отзыв. Плюс 4,2 из 5 на 2ГИС (25 оценок).</p>
     </div>
     <div class="badge-row" style="margin-bottom:28px;">
       <div class="badge">🏋️ Залы · <b><span class="counter" data-target="98">0</span>%</b> положительных</div>
       <div class="badge">🙂 Персонал · <b><span class="counter" data-target="97">0</span>%</b> положительных</div>
-      <div class="badge">⚙️ Оборудование · <b><span class="counter" data-target="100">0</span>%</b> пооложительных</div>
+      <div class="badge">⚙️ Оборудование · <b><span class="counter" data-target="100">0</span>%</b> положительных</div>
       <div class="badge">🧼 Чистота · <b><span class="counter" data-target="93">0</span>%</b> положительных</div>
     </div>
     <div class="review-grid reveal">
@@ -884,7 +884,7 @@
       </div>
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p>Полноценный зал с разнообразным оборудованием по демократичным ценам, без лишнего пафоса, приятный персонал, мвестительная бесплатная парковка.</p>
+        <p>Полноценный зал с разнообразным оборудованием по демократичным ценам, без лишнего пафоса, приятный персонал, вместительная бесплатная парковка.</p>
         <div class="who">Olga V. · Яндекс Карты</div>
       </div>
     </div>
