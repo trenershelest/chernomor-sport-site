@@ -269,7 +269,9 @@
   @media(max-width:780px){.about-grid{grid-template-columns:1fr;}}
   .about p{color:#C9C9C7;font-size:15px;margin-bottom:14px;}
   .amenity-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-  .amenity{background:var(--black-3);border-left:3px solid var(--sea);padding:14px 16px;font-size:13px;color:var(--grey);font-family:var(--f-sub);text-transform:uppercase;letter-spacing:0.5px;}
+  .amenity{display:flex;align-items:center;gap:12px;min-height:62px;background:linear-gradient(110deg,rgba(254,72,135,.055),transparent 62%),var(--black-3);border:1px solid var(--line);border-left:2px solid var(--sea);padding:12px 14px;font-size:12.5px;color:#B9C4C3;font-family:var(--f-sub);font-weight:500;text-transform:uppercase;letter-spacing:0.55px;}
+  .amenity-icon{width:26px;height:26px;flex:0 0 26px;color:var(--sea-bright);stroke:currentColor;filter:drop-shadow(0 0 7px rgba(254,72,135,.16));}
+  .amenity-icon .accent-stroke{stroke:#69DDF2;}
 
   /* Gallery strip */
   .gallery-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;}
@@ -396,6 +398,11 @@
 
   footer{padding:28px 0;text-align:center;color:var(--grey);font-size:13px;font-family:var(--f-sub);}
   footer a{color:var(--sea-bright);}
+  .site-credit{display:inline-flex;align-items:center;gap:8px;margin-top:15px;padding-top:13px;border-top:1px solid var(--line);color:var(--grey)!important;font-size:10.5px;font-weight:600;letter-spacing:1.4px;text-decoration:none;text-transform:uppercase;transition:color .2s ease,border-color .2s ease;}
+  .site-credit::before{content:"";width:18px;height:2px;background:linear-gradient(90deg,#69DDF2,var(--sea));}
+  .site-credit strong{color:var(--sea-bright);font-family:var(--f-display);font-size:10px;}
+  .site-credit:hover,.site-credit:focus-visible{color:var(--white)!important;border-color:var(--sea);}
+  .site-credit:focus-visible{outline:2px solid var(--sea);outline-offset:5px;}
 
   /* Mobile fixes */
   @media(max-width:480px){
@@ -410,6 +417,7 @@
     .badge{font-size:12px;padding:7px 12px;}
     .btn-primary,.btn-secondary{padding:14px 20px;font-size:13px;}
     section{padding:48px 0;}
+    footer{padding-bottom:92px;}
     .athlete-text{padding:36px 20px;}
     .action-break h2{max-width:100%;}
   }
@@ -499,12 +507,12 @@
       <p>Клуб работает с понедельника по субботу — с 07:00 до 23:00, в воскресенье — с 08:00 до 22:00.</p>
     </div>
     <div class="amenity-list">
-      <div class="amenity">🚿 Чистые душевые</div>
-      <div class="amenity">🛋 Зона отдыха и бар</div>
-      <div class="amenity">👧 Детский уголок</div>
-      <div class="amenity">♿ Доступный вход для людей с ограниченными возможностями</div>
-      <div class="amenity">🅿️ Большая парковка</div>
-      <div class="amenity">🚪 Комфортные раздевалки</div>
+      <div class="amenity"><svg class="amenity-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5.5h7.5a4 4 0 0 1 4 4V11"/><path d="M5 3v5"/><path class="accent-stroke" d="M14 12h5M14.5 15l-.5 1M17 15l-.5 1M19.5 15l-.5 1M14.5 19l-.5 1M17 19l-.5 1M19.5 19l-.5 1"/></svg><span>Чистые душевые</span></div>
+      <div class="amenity"><svg class="amenity-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 10h11v4.5A4.5 4.5 0 0 1 11.5 19h-2A4.5 4.5 0 0 1 5 14.5V10Z"/><path d="M16 12h1.5a2.5 2.5 0 0 1 0 5H15"/><path class="accent-stroke" d="M8 7c0-1 1-1.4 1-2.5M12 7c0-1 1-1.4 1-2.5"/></svg><span>Зона отдыха и бар</span></div>
+      <div class="amenity"><svg class="amenity-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="3"/><path d="M6.5 20v-2.5a5.5 5.5 0 0 1 11 0V20"/><path class="accent-stroke" d="m8 4-2-1M16 4l2-1M9 12l3 2 3-2"/></svg><span>Детский уголок</span></div>
+      <div class="amenity"><svg class="amenity-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4.5" r="2"/><path d="M10 8h4l1 5h3l2.5 5M11 8l-1 6-3 5M10 12h5"/><path class="accent-stroke" d="M15.5 19a6 6 0 1 1-7-8.5"/></svg><span>Доступный вход</span></div>
+      <div class="amenity"><svg class="amenity-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><path class="accent-stroke" d="M9 17V7h3.5a3 3 0 0 1 0 6H9"/></svg><span>Большая парковка</span></div>
+      <div class="amenity"><svg class="amenity-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v17M3 21h18"/><path d="M12 3v18"/><path class="accent-stroke" d="M9 11h.01M15 11h.01"/></svg><span>Комфортные раздевалки</span></div>
     </div>
   </div>
 </section>
@@ -940,7 +948,6 @@
       </ul>
       <div class="hero-actions" style="margin-top:26px;">
         <a class="btn-primary" href="https://max.ru/u/f9LHodD0cOJ7XGic3nD1bbNMz1jeeVSo3uOQeUsKXAWq9sYuB1rTm_F3HOw" target="_blank" rel="noopener">Написать в MAX</a>
-        <a class="btn-secondary" href="https://wa.me/message/DMJJODIRIWBDL1" target="_blank" rel="noopener">Или в WhatsApp</a>
         <a class="btn-secondary" href="https://yandex.ru/maps/org/chernomor_sport_klub/90886688577/" target="_blank" rel="noopener">Отзывы на Яндекс Картах</a>
         <a class="btn-secondary" href="https://2gis.ru/sochi/firm/70000001020929503" target="_blank" rel="noopener">Открыть на карте 2ГИС</a>
       </div>
@@ -954,6 +961,7 @@
 <footer>
   <div class="wrap">
     © 2026 ЧЕРНОМОР-СПОРТ · Лечебный переулок, 2, корпус 5, Сочи · <a href="tel:+79189906090">+7 918 990-60-90</a>
+    <br><a class="site-credit" href="https://007-a.ru/?utm_source=chernomorsport.ru&amp;utm_medium=footer&amp;utm_campaign=signature" target="_blank" rel="noopener" aria-label="Разработка сайта 007—A">Разработка сайта <strong>007—A</strong> <span aria-hidden="true">↗</span></a>
   </div>
 </footer>
 
