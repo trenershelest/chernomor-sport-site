@@ -454,6 +454,44 @@
     .athlete-text{padding:36px 20px;}
     .action-break h2{max-width:100%;}
   }
+  /* Training videos: one player, media loads only on request. */
+  .club-videos{border-bottom:1px solid var(--line);scroll-margin-top:100px;}
+  .video-layout{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:64px;align-items:center;}
+  .video-stage{position:relative;width:100%;max-width:360px;justify-self:center;background:#000;border:1px solid var(--line);aspect-ratio:9/16;overflow:hidden;}
+  .video-stage video{display:block;width:100%;height:100%;object-fit:contain;scroll-margin-top:100px;}
+  .video-start{display:none;position:absolute;inset:0;border:0;background:linear-gradient(0deg,rgba(7,12,14,.55),transparent 55%);color:var(--white);cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:16px;font:600 16px var(--f-sub);letter-spacing:1px;text-transform:uppercase;}
+  .is-enhanced .video-start{display:flex;}
+  .video-start[hidden]{display:none;}
+  .video-play-icon{width:76px;height:76px;display:grid;place-items:center;background:var(--pink);border-radius:50%;box-shadow:0 0 0 12px rgba(254,72,135,.12);}
+  .video-play-icon svg{width:24px;height:24px;margin-left:4px;fill:var(--black);}
+  .video-copy h2{font-size:clamp(28px,4vw,46px);line-height:1.13;margin-bottom:18px;}
+  .video-copy h2 span{color:var(--sea-bright);}
+  .video-copy>p{color:#C9C9C7;font-size:16px;max-width:480px;}
+  .video-playlist{display:none;margin-top:28px;gap:10px;}
+  .is-enhanced .video-playlist{display:grid;}
+  .video-choice{display:grid;grid-template-columns:64px 1fr auto;gap:16px;align-items:center;width:100%;padding:10px;text-align:left;background:var(--black-2);border:1px solid var(--line);color:var(--white);cursor:pointer;}
+  .video-choice[aria-pressed="true"]{border-color:var(--pink);background:var(--black-3);}
+  .video-choice:hover{border-color:var(--sea-bright);}
+  .video-choice img{width:64px;height:76px;object-fit:cover;}
+  .video-choice strong{display:block;font:500 18px var(--f-sub);}
+  .video-choice small{display:block;color:var(--grey);font:400 14px var(--f-body);margin-top:4px;}
+  .video-choice time{color:var(--sea-bright);font:500 14px var(--f-sub);padding-right:6px;}
+  .video-start:focus-visible,.video-choice:focus-visible{outline:3px solid var(--brand-blue);outline-offset:-4px;}
+  .video-source{display:inline-block;margin-top:22px;color:var(--grey);font-size:14px;text-decoration:underline;text-underline-offset:4px;}
+  .video-source:hover{color:var(--white);}
+  .video-error{margin-top:16px;color:var(--sea-bright);font-size:16px;}
+  @media(max-width:780px){
+    .video-layout{grid-template-columns:1fr;gap:16px;}
+    .video-copy{display:contents;}
+    .video-copy .eyebrow{grid-row:1;margin-bottom:0;}
+    .video-copy h2{grid-row:2;max-width:550px;margin-bottom:0;}
+    .video-copy>p:not(.video-error){grid-row:3;}
+    .video-stage{grid-row:4;max-width:320px;margin-top:8px;}
+    .video-playlist{grid-row:5;margin-top:8px;}
+    .video-error{grid-row:6;}
+    .video-source{grid-row:7;margin-top:0;}
+  }
+  @media(prefers-reduced-motion:reduce){.club-videos *{scroll-behavior:auto;}}
 </style>
 </head>
 <body>
@@ -712,6 +750,87 @@
     <div class="price-disclaimer">✅ Цены подтверждены официальным прайс-листом клуба (Instagram-сторис, @sochi_fitness). Если что-то поменялось — пришли новый скрин, обновим.</div>
   </div>
 </section>
+
+<section class="club-videos" id="videos" aria-labelledby="videoHeading">
+  <div class="wrap video-layout">
+    <div class="video-stage">
+      <video id="clubVideo" controls playsinline preload="none" poster="media/gym.jpg" src="media/gym.mp4" aria-label="Тренажерный зал">
+        <p>Браузер не поддерживает видео. <a href="media/gym.mp4">Открыть ролик</a></p>
+      </video>
+      <button class="video-start" id="videoStart" type="button" aria-label="Смотреть видео: Тренажерный зал">
+        <span class="video-play-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3v18l16-9z"/></svg></span>
+        Смотреть зал
+      </button>
+    </div>
+    <div class="video-copy">
+      <div class="eyebrow">Внутри Черномор</div>
+      <h2 id="videoHeading">Зал и тренировки <span>в движении</span></h2>
+      <p>Загляни в Черномор перед первым занятием. Оборудование зала и реальные моменты тренировки.</p>
+      <div class="video-playlist" role="group" aria-label="Выбрать видео">
+        <button class="video-choice" type="button" aria-pressed="true" data-src="media/gym.mp4" data-poster="media/gym.jpg" data-title="Тренажерный зал" aria-controls="clubVideo">
+          <img src="media/gym.jpg" alt="" loading="lazy" width="64" height="76">
+          <span><strong>Тренажерный зал</strong><small>Оборудование и свободные веса</small></span><time>0:10</time>
+        </button>
+        <button class="video-choice" type="button" aria-pressed="false" data-src="media/club-in-motion.mp4" data-poster="media/club-in-motion.jpg" data-title="Тренировка в Черномор" aria-controls="clubVideo">
+          <img src="media/club-in-motion.jpg" alt="" loading="lazy" width="64" height="76">
+          <span><strong>Тренировка в Черномор</strong><small>Короткий ролик</small></span><time>0:25</time>
+        </button>
+        <button class="video-choice" type="button" aria-pressed="false" data-src="media/dumbbells.mp4" data-poster="media/dumbbells.jpg" data-title="Работа с гантелями" aria-controls="clubVideo">
+          <img src="media/dumbbells.jpg" alt="" loading="lazy" width="64" height="76">
+          <span><strong>Работа с гантелями</strong><small>Фрагмент тренировки</small></span><time>0:12</time>
+        </button>
+        <button class="video-choice" type="button" aria-pressed="false" data-src="media/pull-ups.mp4" data-poster="media/pull-ups.jpg" data-title="Подтягивания" aria-controls="clubVideo">
+          <img src="media/pull-ups.jpg" alt="" loading="lazy" width="64" height="76">
+          <span><strong>Подтягивания</strong><small>Фрагмент тренировки</small></span><time>0:33</time>
+        </button>
+      </div>
+      <p class="video-error" id="videoError" role="status" hidden>Не удалось загрузить ролик. Попробуй другое видео или открой съемку по ссылке ниже.</p>
+      <a class="video-source" href="https://shapovalova-photos.wfolio.pro/disk/02-08-2026-chernomor-sport-3tk5tx/video-bez-montazha" target="_blank" rel="noopener">Вся съемка Людмилы Шаповаловой</a>
+    </div>
+  </div>
+</section>
+<script>
+(() => {
+  const section = document.getElementById('videos');
+  const video = document.getElementById('clubVideo');
+  const start = document.getElementById('videoStart');
+  const error = document.getElementById('videoError');
+  const choices = Array.from(section.querySelectorAll('.video-choice'));
+  section.classList.add('is-enhanced');
+  const play = () => {
+    error.hidden = true;
+    start.hidden = true;
+    video.play().catch(() => {
+      // Native controls stay available if playback is blocked or interrupted.
+      if (video.error) error.hidden = false;
+    });
+  };
+  start.addEventListener('click', play);
+  choices.forEach(choice => choice.addEventListener('click', () => {
+    if (video.getAttribute('src') !== choice.dataset.src) {
+      video.pause();
+      video.src = choice.dataset.src;
+      video.poster = choice.dataset.poster;
+      video.setAttribute('aria-label', choice.dataset.title);
+      video.load();
+    }
+    choices.forEach(item => item.setAttribute('aria-pressed', String(item === choice)));
+    const bounds = video.getBoundingClientRect();
+    if (bounds.top < 100 || bounds.top > window.innerHeight - 100) {
+      video.scrollIntoView({block:'start', behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
+    }
+    play();
+  }));
+  video.addEventListener('play', () => { start.hidden = true; error.hidden = true; });
+  video.addEventListener('error', () => { error.hidden = false; start.hidden = true; });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) video.pause(); });
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(entries => {
+      if (!entries[0].isIntersecting) video.pause();
+    }).observe(video);
+  }
+})();
+</script>
 
 <section id="schedule">
   <div class="wrap">

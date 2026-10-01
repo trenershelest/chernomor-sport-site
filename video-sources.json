@@ -1,0 +1,46 @@
+{
+  "gallery": "https://shapovalova-photos.wfolio.pro/disk/02-08-2026-chernomor-sport-3tk5tx/video-bez-montazha",
+  "shootDate": "2026-08-02",
+  "videos": [
+    {
+      "id": "gym",
+      "title": "Тренажерный зал",
+      "original": "DSC_3410.MOV",
+      "duration": "0:10",
+      "src": "media/gym.mp4",
+      "poster": "media/gym.jpg",
+      "source": "https://vp.wfolio.ru/video_proxies/of4j5aS4cVwPTxC_axvSqiEyxCk9QDU3/av5WYzhMki5iwn6f4-se_Fza7b-7eyN8/D1x8jN4xvFBHUm2woRUhhI6MJCYO_3Pq/kp6LleOH8E-4ys7iIlITjElUM2lDLbTD/Y1GbGxE68k8WLmQuBbYwFh3pNobpGuob/p71IdG7V8sZzv6aTkbNax9utTwHyFrjQ/yc1M56iOmcyvfQAri5VKk1IZ2Jcjyghg/LIZFjK8-FSY2tGEPzFrFPYtoHM7csmmz.mp4",
+      "sourcePoster": "https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/sKWLdkPGTgdMywQcC8RBXFQ07zknB_Ae/l7LPAPWNrV_uIkozpm1KbgtSW4xatF6M/3txEWXr2ndhCQs232uT3FCLMAsXSQtmv/mty6MLABpQfdaSjWCIc9xiMx9FvfN4I1/XRXRpqNgzkriYr7UuSyuCEPBUlStDudk/hZiXVgONysxq4Yby_mwyZa3xZHUVBPsr/WY1Hk3iwyVYEEM_3sEumqMaxeAmhl3Zo/amPUpIOrYuRwPRt4FyNvbItQ7LI3VQEx/ObWEEiaur2vn26VXWGKvEWjAraTU3w8C/qHma6DhCcc8DWPGN1TEPCJ313voXjRmU/bD4-mtCuOSYwM4U1WSZl2e1O21cKbXHD/6yAo59t0GbKo8hLb0x6hTpcZCXKVbPtK/SnL7nWpruNMUOYCXFe8-VywN3eEAlhTS/KyM_o8IT2WG7Sp-mWWSwGnSzBq9dpJ9u/JavBzIjd-S9cadw2giLa6yOaCXN2sWtP/PvC04CzzRPD3iH81uldbOoWxPC7Z2XWG/bENycTnqQn9cN0R-7EalnwTwbDk4V_bp/ZJJE-JNVBtU.jpg"
+    },
+    {
+      "id": "club-in-motion",
+      "title": "Тренировка в Черномор",
+      "original": "copy_6DEECF87-7637-4B2A-84BC-852BF6C702E6.MOV",
+      "duration": "0:25",
+      "src": "media/club-in-motion.mp4",
+      "poster": "media/club-in-motion.jpg",
+      "source": "https://vp.wfolio.ru/video_proxies/of4j5aS4cVwPTxC_axvSqiEyxCk9QDU3/av5WYzhMki5iwn6f4-se_Fza7b-7eyN8/D1x8jN4xvFBHUm2woRUhhLazPo3MHcoA/0UrZuv7itenxkOpV3gdmOnqbKrtFEZ3d/YClsanqeUpKXXPb-jNZUGpg1xxW_lNQI/xPmiiW_N1rW90V-y-_o8wGiiRIAm_UUq/VPxvotSQsnw543W46z_wmKfe_NaUcKXy/Im4a6v-jO8NFnwN54fiVYpK2anRbgCg8.mp4",
+      "sourcePoster": "https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/sKWLdkPGTgdMywQcC8RBXFQ07zknB_Ae/l7LPAPWNrV_uIkozpm1KbgtSW4xatF6M/3txEWXr2ndhCQs232uT3FCLMAsXSQtmv/mty6MLABpQfdaSjWCIc9xiMx9FvfN4I1/XRXRpqNgzkriYr7UuSyuCEPBUlStDudk/hZiXVgONysxq4Yby_mwyZa3xZHUVBPsr/WY1Hk3iwyVYEEM_3sEumqKAXnAsd-051/Jb6Ydroftr-RBWamalpY2qAeHqGhWTsU/lrvdI7IhH0Z91mRmDxkIw5US6Ew0x9Lt/EIo2KNZHjBzJtz_Dpnnv8TBNZoroq2Lt/6NLS3lGkZ3-TIZEMh3AUacZh_UBOkDxF/5yhHYQwprWakc2jWKIC2AuGSqsCU_vth/RUElblO--d9TArBpjcl8EaK6NzrRY8Z2/_GWQFYsaH1xEvnnGswRFgzxEnHGdoRCe/0hhLLoZCuXs-52gnr_gDEjD-OQO6ZSbc/toQX2iUIBBznLiy_C_i9ShyK-yur8ytj/Nz4aTp-VRNyMChEliI9_zcRAmpgdvMKx/qF7aqfsglEc.jpg"
+    },
+    {
+      "id": "dumbbells",
+      "title": "Работа с гантелями",
+      "original": "DSC_3395.MOV",
+      "duration": "0:12",
+      "src": "media/dumbbells.mp4",
+      "poster": "media/dumbbells.jpg",
+      "source": "https://vp.wfolio.ru/video_proxies/of4j5aS4cVwPTxC_axvSqiEyxCk9QDU3/av5WYzhMki5iwn6f4-se_Fza7b-7eyN8/D1x8jN4xvFBHUm2woRUhhBG4ALMpoB57/baZsM1nCMyk4mPvfQskP3aWafhKG3dWY/dZZeFA6fdQuLwrReyKDu22BBnAXNy5V2/ZucmCK1ixZfDajBnJPH7TVe73kfEwEgS/fxCfTblaiKEilAfwpjQf07C1DSP3kZl7/KlsNSSyA4Ch9c7hzezH9EY7XMSF8EbIm.mp4",
+      "sourcePoster": "https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/sKWLdkPGTgdMywQcC8RBXFQ07zknB_Ae/l7LPAPWNrV_uIkozpm1KbgtSW4xatF6M/3txEWXr2ndhCQs232uT3FCLMAsXSQtmv/mty6MLABpQfdaSjWCIc9xiMx9FvfN4I1/XRXRpqNgzkriYr7UuSyuCEPBUlStDudk/hZiXVgONysxq4Yby_mwyZa3xZHUVBPsr/WY1Hk3iwyVYEEM_3sEumqMaxeAmhl3Zo/amPUpIOrYuTMS8OMpySbmdi5Uf3QpBeh/LOwELfkZxa4qyU2mi9BlCm76IzdQlR9X/5TwoBUURucnKvPXABvC4Ll-5qP6JUYj4/OUXbGbD2oGIDEj2UOq-qWlZJKANYqEST/noVZzSkDo5YjMMnG2FYVGG52TSmwJNHc/HQ5tkbwdzXmTuzrT2CafdcEDHm_Gm2x6/u-mEethc8egcqEZ7L2Z-0qIpT3B9qwIR/X8q96q3jWi62JpuexQcVUmbhhu2jxp73/BqvFQbFwvc0MAwUzBPcAZWNM4oUWidr1/M3fetLS2i8n4YbKjquaYrSu0kD2smPPj/8YkHYxiLcXc.jpg"
+    },
+    {
+      "id": "pull-ups",
+      "title": "Подтягивания",
+      "original": "DSC_3398.MOV",
+      "duration": "0:33",
+      "src": "media/pull-ups.mp4",
+      "poster": "media/pull-ups.jpg",
+      "source": "https://vp.wfolio.ru/video_proxies/of4j5aS4cVwPTxC_axvSqiEyxCk9QDU3/av5WYzhMki5iwn6f4-se_Fza7b-7eyN8/D1x8jN4xvFBHUm2woRUhhNiYMm6ClOsl/wpl-GAC6o5fTBB-s2vg-wev1QBWQerdl/msvSC77VTiHGDEi0QIB2Hi14YVklFzDC/xBEsOGKKJsJitACDW9_m5fKnf2bFlF5L/peym77pc7VvZ9MWBkQyfW_ZLAKwQyx7Z/CRaxNDWn-8UxeQD-X_AuQHnEJb5yxgt4.mp4",
+      "sourcePoster": "https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/sKWLdkPGTgdMywQcC8RBXFQ07zknB_Ae/l7LPAPWNrV_uIkozpm1KbgtSW4xatF6M/3txEWXr2ndhCQs232uT3FCLMAsXSQtmv/mty6MLABpQfdaSjWCIc9xiMx9FvfN4I1/XRXRpqNgzkriYr7UuSyuCEPBUlStDudk/hZiXVgONysxq4Yby_mwyZa3xZHUVBPsr/WY1Hk3iwyVYEEM_3sEumqMaxeAmhl3Zo/amPUpIOrYuSTAGSQ8ZZBk2OjyHNkKnt9/qC2QvrD2bigyMEngdHhLxNQ7R4fva_fP/BVFHznA9gqbJNZDyDGhGNGaVvWmIBB6V/KiGu8XiDqo8hjwkcVr-BMJYtaCvPCr--/bzGJ61vvWh8TpS_LktggP_xLMf5foRB0/P3RaZVuy8D18itAVF06qQ-nNt4q2jKMH/gals6VTPT_F9zrf6GlaL7EtzrVgtN4YU/2BZ2wq6rxU9zigDhXIqHGIBzf9X1Wsjd/cX8npOXQTOakKOwx783gAdluAq9G_yI9/Jqkq0YPFDEdGslIFsHQlliY6vPvVdA76/rt4feLQpdrg.jpg"
+    }
+  ]
+}
